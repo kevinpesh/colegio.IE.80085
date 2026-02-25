@@ -1,0 +1,475 @@
+/* === TU HEADER Y NAV (INTACTO) === */
+body{
+    font: Arial, Helvetica, sans-serif 10px;
+    padding: 0;
+    margin: 0;
+    background: #242828;
+}
+
+.contenedor{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.boton1{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+
+header{
+    background-color: #242828;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 5px solid #1293d4;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #marca{
+    float: left;
+}
+
+header #marca h1{ 
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .resaltado{
+    color: #1293d4;
+    font-weight: bold;
+}
+
+header .actual a{
+    color: #1293d4;
+}
+
+header a:hover{
+    color: #ccc;
+    font-weight: bold;
+}
+
+/* === BOLETÍN DECORADO === */
+#boletin{
+    padding: 30px 15px;
+    color: #fff;
+    background: linear-gradient(45deg, #1293d4, #0e7ab3);
+    overflow: hidden;
+}
+
+#boletin h1{
+    float: left;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+#boletin form{
+    float: right;
+    margin-top: 8px;
+}
+
+#boletin input[type="email"]{
+    padding: 12px 20px;
+    height: auto;
+    width: 280px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+#boletin input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0 5px 25px rgba(255,255,255,0.3);
+    transform: scale(1.02);
+}
+
+#boletin .boton1 {
+    height: auto;
+    background: white;
+    color: #1293d4;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-left: 10px;
+}
+
+#boletin .boton1:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* === MAIN === */
+#main {
+    padding: 40px 0;
+}
+
+article#main-col {
+    float: left;
+    width: 65%;
+    color: #fff;
+}
+
+#main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#main h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #1293d4;
+    border-radius: 2px;
+    box-shadow: 0 0 15px #1293d4;
+}
+
+.intro {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #ccc;
+    background: rgba(18,147,212,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #1293d4;
+}
+
+/* === GRID DE COMUNIDAD === */
+.comunidad-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.comunidad-item {
+    background: rgba(63, 63, 63, 0.7);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(18,147,212,0.2);
+    transition: all 0.3s;
+}
+
+.comunidad-item:hover {
+    transform: translateY(-5px);
+    border-color: #1293d4;
+    box-shadow: 0 15px 30px rgba(18,147,212,0.2);
+    background: rgba(63, 63, 63, 0.9);
+}
+
+.comunidad-header {
+    background: rgba(18,147,212,0.2);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid #1293d4;
+}
+
+.comunidad-icono {
+    font-size: 32px;
+    filter: drop-shadow(0 0 8px rgba(18,147,212,0.5));
+}
+
+.comunidad-header h2 {
+    color: #1293d4;
+    font-size: 24px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(18,147,212,0.3);
+}
+
+.comunidad-content {
+    padding: 20px;
+}
+
+.sub-categoria {
+    color: #1293d4;
+    font-size: 18px;
+    margin: 20px 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed rgba(18,147,212,0.3);
+}
+
+.sub-categoria:first-of-type {
+    margin-top: 0;
+}
+
+.miembro {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border-left: 3px solid #1293d4;
+    transition: all 0.2s;
+}
+
+.miembro:hover {
+    background: rgba(18,147,212,0.1);
+    transform: translateX(5px);
+}
+
+.miembro h3 {
+    color: #1293d4;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.miembro p {
+    color: #e0e0e0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 3px 0;
+}
+
+.miembro p strong {
+    color: #1293d4;
+}
+
+.asociacion {
+    background: rgba(18,147,212,0.15);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    border: 1px solid rgba(18,147,212,0.3);
+}
+
+.asociacion h3 {
+    color: #1293d4;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.mision-equipo {
+    color: #1293d4;
+    font-style: italic;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(18,147,212,0.1);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* === LATERAL === */
+aside#lateral {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.oscuro {
+    background: linear-gradient(135deg, #1e2a32, #2c3e50);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border-left: 4px solid #1293d4;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.oscuro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(18,147,212,0.2);
+}
+
+.oscuro h3 {
+    color: #1293d4;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(18,147,212,0.3);
+    padding-bottom: 8px;
+}
+
+.evento, .testimonio {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.evento:last-child, .testimonio:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.evento p, .testimonio p {
+    color: #e0e0e0;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 3px 0;
+}
+
+.evento p strong, .testimonio p strong {
+    color: #1293d4;
+}
+
+.autor {
+    font-style: italic;
+    color: #aaa !important;
+    font-size: 12px !important;
+    text-align: right;
+}
+
+/* === FOOTER === */
+footer{
+    padding: 25px;
+    margin-top: 40px;
+    color: #fff;
+    background: linear-gradient(45deg, #1293d4, #0e7ab3);
+    text-align: center;
+}
+
+footer p {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+    article#main-col, aside#lateral {
+        float: none;
+        width: 100%;
+    }
+    
+    aside#lateral {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    header #marca, header nav, header nav li, #boletin h1, #boletin form {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    header{
+        padding-bottom: 20px;
+    }
+    
+    #boletin h1{
+        margin-bottom: 15px;
+    }
+    
+    #boletin form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #boletin input[type="email"] {
+        width: 100%;
+        max-width: 300px;
+        margin: 0;
+    }
+    
+    #boletin .boton1 {
+        width: 100%;
+        max-width: 300px;
+        margin: 0;
+    }
+    
+    .comunidad-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Imagen de profesores, imagen principal*/
+
+.imagen-principal {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.imagen-principal img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+
+/* Header: logo a la izquierda + titulo en la misma linea */
+#marca {
+    display: flex;
+    align-items: center;   /* centra verticalmente logo y texto */
+}
+
+#marca h1 {
+    display: flex;
+    align-items: center;   /* centra verticalmente dentro del h1 */
+    gap: 20px;             /* espacio entre logo y texto */
+    margin: 0;
+}
+
+/* Tamaño del logo */
+.logo-header {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin-right: 16px;   /* separa el logo del texto */
+    transition: transform 0.3s ease;
+}
+
+.logo-header:hover {
+    transform: scale(1.05);
+}
+
+/* Animación para logo de entrada al cargar */
+@keyframes logoIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.logo-header {
+  animation: logoIn 0.8s ease-out, floatLogo 3.5s ease-in-out infinite;
+}

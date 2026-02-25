@@ -1,0 +1,293 @@
+body{
+    font: Arial 15px;
+    padding: 0;
+    margin: 0;
+    background: #242828;
+}
+/*Estilos globales*/
+.contenedor{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.boton1{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+header{
+    background-color: #242828;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 5px solid #1293d4;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #marca{
+    float: left;
+}
+header #marca h1{ 
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+header .resaltado{
+    color: #1293d4;
+    font-weight: bold;
+}
+header .actual a{
+    color: #1293d4;
+}
+header a:hover{
+    color: #ccc;
+    font-weight: bold;
+}
+/*Cabecera de imagen*/
+#cabecera{
+    min-height: 570px;
+    background: url('../imagenes/MGS.png') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+#cabecera h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#cabecera p{
+    font-size: 20px;
+}
+/*Formulario boletin*/
+#boletin{
+    padding: 15px;
+    color: #fff;
+    background: #242828;
+}
+#boletin h1{
+    float: left;
+}
+#boletin form{
+    float: right;
+    margin-top: 15px;
+}
+#boletin input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+/*cajas*/
+#cajas{
+    margin-top: 20px;
+}
+#cajas .caja{
+    float: left;
+    color: #fff;
+    text-align: center;
+    width: 30%;
+}
+#cajas .caja img{
+    width: 90px;
+}
+
+/* === CSS - CAJAS MÁS ANCHAS (MENOS LARGO VERTICAL) === */
+#cajas {
+    padding: 40px 0;
+}
+
+#cajas .contenedor {
+    max-width: 1400px; /* MÁS ANCHO (antes 1200px) */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; /* MÁS SEPARACIÓN */
+    padding: 0 20px;
+}
+
+#cajas .caja {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    width: 100%; /* OCUPA TODO EL ANCHO DISPONIBLE */
+}
+
+#cajas .caja img {
+    width: 100%;
+    height: 200px; /* IMAGEN MÁS GRANDE */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#cajas .caja h3 {
+    color: #1293d4;
+    font-size: 26px; /* TÍTULO MÁS GRANDE */
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1293d4;
+}
+
+/* TEXTO MÁS COMPACTO VERTICALMENTE */
+#cajas .caja p {
+    color: #333;
+    font-size: 20px;
+    line-height: 1.4; /* REDUJE ESPACIO ENTRE LÍNEAS */
+    margin-bottom: 12px;
+    text-align: top; /* CAMBIÉ A LEFT PARA QUE OCUPE MEJOR EL ANCHO */
+    word-spacing: normal;
+    letter-spacing: normal;
+}
+
+/* VALORES - MÁS COMPACTOS */
+#cajas .valores-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#cajas .valor-item {
+    background: #f8f9fa;
+    border-left: 4px solid #1293d4;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+#cajas .valor-titulo {
+    color: #1293d4;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#cajas .valor-descripcion {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.4; /* MÁS COMPACTO */
+    display: block;
+}
+
+/* PARA QUE EL TEXTO SEA MÁS ANCHO Y OCUPE MENOS ALTO */
+.caja p {
+    max-width: 100%;
+    hyphens: auto; /* PARTE PALABRAS SI ES NECESARIO */
+}
+
+/* RESPONSIVE - 3 COLUMNAS SIEMPRE */
+@media (max-width: 1000px) {
+    #cajas .contenedor {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    #cajas .contenedor {
+        grid-template-columns: repeat(2, 1fr); /* 2 EN TABLETS */
+    }
+}
+
+@media (max-width: 600px) {
+    #cajas .contenedor {
+        grid-template-columns: 1fr; /* 1 EN CELULARES */
+    }
+}
+/*Footer*/
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #1293d4;
+    text-align: center;
+}
+/*Media qeurie - responsive*/
+@media (max-width: 768px){
+    header #marca, header nav, header nav li, #boletin h1, #boletin form, #cajas .caja, 
+    article#main-col,aside#lateral{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    aside#lateral {
+        order: 1; 
+        width: 100%;
+        margin-top: 20px;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #boletin h1{
+        margin-top: 40px;
+    }
+    #boletin button{
+        display: block;
+        width: 100%;
+    }
+    #boletin form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    input, textarea{
+        width: 98%;
+    }
+}
+
+/*codigo de icono*/
+#marca h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espacio entre logo y texto */
+}
+
+.logo-header {
+    width: 100px;      /* ajusta el tamaño a tu gusto */
+    height: auto;
+}
+
+.logo-header {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-header:hover {
+    transform: scale(1.1);
+}
+
+/* Animación de entrada al cargar */
+@keyframes logoIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.logo-header {
+  animation: logoIn 0.8s ease-out, floatLogo 3.5s ease-in-out infinite;
+}
+
+
+/*para centrar el texto */

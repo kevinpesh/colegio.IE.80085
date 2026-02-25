@@ -1,0 +1,202 @@
+body{
+    font: Arial 15px;
+    padding: 0;
+    margin: 0;
+    background: #242828;
+}
+/*Estilos globales*/
+.contenedor{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.boton1{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+header{
+    background-color: #242828;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 5px solid #1293d4;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #marca{
+    float: left;
+}
+header #marca h1{ 
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+header .resaltado{
+    color: #1293d4;
+    font-weight: bold;
+}
+header .actual a{
+    color: #1293d4;
+}
+header a:hover{
+    color: #ccc;
+    font-weight: bold;
+}
+/*Formulario boletin*/
+#boletin{
+    padding: 15px;
+    color: #fff;
+    background: #242828;
+}
+#boletin h1{
+    float: left;
+}
+#boletin form{
+    float: right;
+    margin-top: 15px;
+}
+#boletin input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+/* Lateral */
+aside#lateral {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+.oscuro {
+    padding: 15px;
+    background-color: #35424a;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Main */
+article#main-col {
+    float: left;
+    width: 65%;
+    color: #fff;
+}
+/*Footer*/
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #1293d4;
+    text-align: center;
+}
+/*Media qeurie - responsive*/
+@media (max-width: 768px){
+    header #marca, header nav, header nav li, #boletin h1, #boletin form, #cajas .caja, 
+    article#main-col,aside#lateral{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #boletin h1{
+        margin-top: 40px;
+    }
+    #boletin button{
+        display: block;
+        width: 100%;
+    }
+    #boletin form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    input, textarea{
+        width: 98%;
+    }
+}
+/* ============================= */
+/* BOTON FLOTANTE FACEBOOK */
+/* ============================= */
+
+.btn-facebook {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1877F2;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.btn-facebook:hover {
+    transform: scale(1.1);
+}
+
+/* Header: logo a la izquierda + titulo en la misma linea */
+#marca {
+    display: flex;
+    align-items: center;   /* centra verticalmente logo y texto */
+}
+
+#marca h1 {
+    display: flex;
+    align-items: center;   /* centra verticalmente dentro del h1 */
+    gap: 20px;             /* espacio entre logo y texto */
+    margin: 0;
+}
+
+/* Tamaño del logo */
+.logo-header {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin-right: 16px;   /* separa el logo del texto */
+    transition: transform 0.3s ease;
+}
+
+.logo-header:hover {
+    transform: scale(1.05);
+}
+
+/* Animación de logo de entrada al cargar */
+@keyframes logoIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.logo-header {
+  animation: logoIn 0.8s ease-out, floatLogo 3.5s ease-in-out infinite;
+}
